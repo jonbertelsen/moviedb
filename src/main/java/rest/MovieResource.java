@@ -16,7 +16,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 //Todo Remove or change relevant parts before ACTUAL use
-@Path("xxx")
+@Path("movie")
 public class MovieResource {
 
     private static final EntityManagerFactory EMF = EMF_Creator.createEntityManagerFactory(
@@ -31,7 +31,7 @@ public class MovieResource {
     @GET
     @Produces({MediaType.APPLICATION_JSON})
     public String demo() {
-        return "{\"msg\":\"Hello World\"}";
+        return "{\"msg\":\"Hello Movie World\"}";
     }
     @Path("count")
     @GET
